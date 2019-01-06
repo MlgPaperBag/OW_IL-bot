@@ -1,0 +1,27 @@
+const Discord = require("discord.js");
+const img = "https://cdn.discordapp.com/attachments/530750652813410325/530784424405762089/unnamed.jpg"
+module.exports.run = async (bot, message, args) => {
+const embed = new Discord.RichEmbed()
+.setTitle(`Help Menu`)
+.setColor("BLUE")
+.setDescription(`
+my prefix is: !
+**COMMANDS:**
+~~ᅠᅠ ᅠᅠ ᅠᅠᅠᅠ ᅠᅠ ᅠᅠᅠᅠ ᅠᅠ ᅠᅠ~~
+ᅠᅠ ᅠᅠ ᅠᅠᅠ**INFO**
+~~ᅠᅠ ᅠᅠ ᅠᅠᅠᅠ ᅠᅠ ᅠᅠᅠᅠ ᅠᅠ ᅠᅠ~~
+help,userinfo @user,report,tournament,patches,youtube.
+~~ᅠᅠ ᅠᅠ ᅠᅠᅠᅠ ᅠᅠ ᅠᅠᅠᅠ ᅠᅠ ᅠᅠ~~
+ᅠᅠ ᅠᅠ ᅠᅠᅠ**FUN**
+~~ᅠᅠ ᅠᅠ ᅠᅠᅠᅠ ᅠᅠ ᅠᅠᅠᅠ ᅠᅠ ᅠᅠ~~
+joke,meme.
+~~ᅠᅠ ᅠᅠ ᅠᅠᅠᅠ ᅠᅠ ᅠᅠᅠᅠ ᅠᅠ ᅠᅠ~~
+`)
+.setFooter(`Overwatch Israeli community` , img)
+message.channel.send(embed)
+
+  }
+
+module.exports.help = {
+  name:"help"
+}
